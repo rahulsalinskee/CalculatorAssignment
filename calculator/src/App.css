@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.result {
+  height: 20px;
+  background-color: gray;
+  width: 40%;
+}
+
+.result p {
+  font-size: 20px;
+}
