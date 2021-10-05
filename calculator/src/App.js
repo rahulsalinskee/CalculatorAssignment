@@ -8,28 +8,27 @@ class App extends Component {
   state = {
     result: ''
   }
-
   buttonPressed = (buttonName) => {
     if (buttonName === "=") {
       this.calculate()
     }
     else if (buttonName === "cancel") {
-      this.state.result = ''
-      this.setState({resut: this.state.result});
+      this.state.result = '';
+      this.setState({ result: this.state.result });
     }
     else {
       this.setState({ result: this.state.result + buttonName });
     }
   };
-
   calculate = () => {
-    this.setState({result: eval(this.state.result)})
+    this.setState({ result: eval(this.state.result) })
   }
-
   render() {
     return (
       <div className="App">
-        <Output result={this.state.result}/>
+        <h3>
+          <Output result={this.state.result} />
+        </h3>
         <KeyPad buttonPressed={this.buttonPressed} />
       </div>
     );

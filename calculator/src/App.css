@@ -8,6 +8,11 @@
   width: 40%;
 }
 
-.result p {
-  font-size: 20px;
+div{
+  background-color: azure;
+  height: 50;
+  width: 50;
+  border: 2px solid black;
+  float: left;
+  margin: 10px;
 }

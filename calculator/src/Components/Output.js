@@ -1,12 +1,11 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react'
 
 export default class Output extends Component {
     render() {
         return (
-            <div classname="result">
+            <div className="result">
                 <p>{this.props.result}</p>
             </div>
         )
-
     }
 }
